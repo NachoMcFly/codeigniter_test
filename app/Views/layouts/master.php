@@ -11,7 +11,7 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
           <div class="row">
-            <p>Layouts de prueba</p>
+            <p>Layouts masterrr</p>
             <div class="col-12" aling="center"><br>
               <h1 class="display-3"><b><?= $this->renderSection('header') ?></b></h1>
             </div>
@@ -20,7 +20,7 @@
       </div>
 
   <div class="container">
-    <a href="/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">return welcome</a>
+    <a href="/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">return main view</a>
       
       <?= $this->renderSection('content') ?>
 

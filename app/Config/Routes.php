@@ -30,8 +30,15 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/test', 'Home::test');
 
-$routes->get('test', 'Home::test');
+//ruta para la pokedex
+$routes->get('/pokedex', 'PokedexController\Pokedex::index'); //vista
+$routes->get('/pokedex/create', 'PokedexController\Pokedex::create');  //crear
+$routes->post('/pokedex', 'PokedexController\Pokedex::store');
+$routes->get('/pokedex/{id}/edit', 'PokedexController\Pokedex::edit'); //editar
+$routes->put('/pokedex/{id}', 'PokedexController\Pokedex::update');
+$routes->delete('/pokedex/{id}', 'PokedexController\Pokedex::delete'); //eliminar
 
 /*
  * --------------------------------------------------------------------
